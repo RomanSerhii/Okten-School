@@ -11,6 +11,9 @@ body {
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
    background: black;
+   padding: 20px;
+      margin: 20px;
+      border: 0;
 }
 a {
    text-decoration: none;
