@@ -18,4 +18,11 @@ body {
 a {
    text-decoration: none;
       color: red;
+         padding: 10px;
+}
+.flex {
+   display: flex;
+   flex-direction: column;
+      margin-top: 50px;
+
 }
