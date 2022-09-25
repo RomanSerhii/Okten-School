@@ -399,31 +399,32 @@
 //  Три різних числа вводяться через prompt().
 // За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)
 
-// let num1 = +prompt("Перше число");
-// let num2 = +prompt("Друге число");
-// let num3 = +prompt("Третє число");
+let num1 = +prompt("Перше число");
+let num2 = +prompt("Друге число");
+let num3 = +prompt("Третє число");
 
-// if (num1 > num2 && num1 > num3) {
-//    if (num2 > num3) {
-//       console.log(num3, num2, num1);
-//    } else {                                        
-//       console.log(num2, num3, num1);
-//    }                                                  
-// }
-//  else if (num2 > num1 && num2 > num3) {
-//     if (num1 > num3) {
-//        console.log(num3, num1, num2);
-//     } else {
-//        console.log(num1, num3, num2);
-//     }
-//  }
-// else if (num3 > num1 && num3 > num2) {
-//    if (num1 > num2) {
-//       console.log(num2, num1, num3);
-//    } else {
-//       console.log(num1, num2, num3);
-//    }
-// }
+if (num1 > num2 && num1 > num3) {
+   if (num2 > num3) {
+      console.log(num3, num2, num1);
+   } else {                                        
+      console.log(num2, num3, num1);
+   }                                                  
+}
+ else if (num2 > num1 && num2 > num3) {
+    if (num1 > num3) {
+       console.log(num3, num1, num2);
+    } else {
+       console.log(num1, num3, num2);
+    }
+ }
+else if (num3 > num1 && num3 > num2) {
+   if (num1 > num2) {
+      console.log(num2, num1, num3);
+   } else {
+      console.log(num1, num2, num3);
+   }
+}
+
  
    // ------- 16 --------
    
@@ -467,33 +468,33 @@
 // Если светофор красный - и машины есть вывести "стой и жди".
 // Если светофор в аварийном режиме вывести "делай что хочешь"!
 
-let answer = prompt("Введи колір світлофору");
-let isRoadClear = confirm("На дорозі є машини ?");
-let go = "Іди";
-let wait1 = "Почекай, порушники їдуть !!!";
-let wait2 = "Ще почекай !!!";
-let stop1 = "Стій !!!";
-let stop2 = "Стій та чекай !!!";
-let emergencyMode = 'Роби що хочеш';
+// let answer = prompt("Введи колір світлофору");
+// let isRoadClear = confirm("На дорозі є машини ?");
+// let go = "Іди";
+// let wait1 = "Почекай, порушники їдуть !!!";
+// let wait2 = "Ще почекай !!!";
+// let stop1 = "Стій !!!";
+// let stop2 = "Стій та чекай !!!";
+// let emergencyMode = 'Роби що хочеш';
 
-if (answer === 'green' && !isRoadClear) {
-   console.log(go);
-}
-else if (answer === 'green' && isRoadClear) {
-   console.log(wait1);
-}
-else if (answer === 'yellow' && isRoadClear) {
-   console.log(wait1);
-}
-else if (answer === 'yellow' && !isRoadClear) {
-   console.log(wait2);
-}
-else if (answer === 'red' && isRoadClear) {
-   console.log(stop2);
-}
-else if (answer === 'red' && !isRoadClear) {
-   console.log(stop1);
-}
-else {
-   console.log(emergencyMode);
-}
+// if (answer === 'green' && !isRoadClear) {
+//    console.log(go);
+// }
+// else if (answer === 'green' && isRoadClear) {
+//    console.log(wait1);
+// }
+// else if (answer === 'yellow' && isRoadClear) {
+//    console.log(wait1);
+// }
+// else if (answer === 'yellow' && !isRoadClear) {
+//    console.log(wait2);
+// }
+// else if (answer === 'red' && isRoadClear) {
+//    console.log(stop2);
+// }
+// else if (answer === 'red' && !isRoadClear) {
+//    console.log(stop1);
+// }
+// else {
+//    console.log(emergencyMode);
+// }
