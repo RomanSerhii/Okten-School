@@ -57,16 +57,26 @@ button::-moz-focus-inner {
 }
 
 body {
-   background-color: fff;
+   max-width: 1600px;
+   background-color: #fff;
+   
+}
+
+.container {
+   padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
 }
 
 .header {
    display: flex;
+   align-items: center;
+   justify-content: space-between;
    padding: 0 100px;
    height: 96px;
    background-color: black;
-   align-items: center;
-   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 .header_logo img {
@@ -84,6 +94,7 @@ body {
 .menu {
    display: flex;
    column-gap: 35px;
+   flex-wrap: wrap;
 }
 
 .menu li {
@@ -127,7 +138,7 @@ body {
 
 .slider {
    background-image: linear-gradient(to top, rgba(14, 13, 13, 0.4), rgba(12, 12, 12, 0.4)),
-      url('./img/83323510_102186754684700_241768223102468096_n.jpg');
+         url('./img/83323510_102186754684700_241768223102468096_n.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    min-height: 100vh;
