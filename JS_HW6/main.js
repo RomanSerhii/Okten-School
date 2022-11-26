@@ -370,21 +370,21 @@
 // Створити не менше 7 та не більше 20 машинок.
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
 
-const cars = [
-   {producer:"subaru",model: "wrx",owner:{ name: 'Petro', age: 30, drivingExperience: 3}, year: 2010, color:"blue",type: "sedan",engine: "ej204x",volume: 2,power: 400, price: 23000},
-   {producer:"subaru",model: "legacy",owner:{ name: 'Ivan', age: 30, drivingExperience: 12}, year: 2007, color:"silver",type: "sedan",engine: "ez30",volume: 3,power: 250, price: 45000},
-   {producer:"subaru",model: "tribeca",owner:{ name: 'Serhii', age: 30, drivingExperience: 5}, year: 2011, color:"white",type: "jeep",engine: "ej20",volume: 2,power: 300, price: 18000},
-   {producer:"subaru",model: "leone",owner:{ name: 'Nadiia', age: 30, drivingExperience: 11}, year: 1998, color:"yellow",type: "sedan",engine: "ez20x",volume: 2,power: 140, price: 225000},
-   {producer:"subaru",model: "impreza",owner:{ name: 'Andrii', age: 30, drivingExperience: 8}, year: 2014, color:"red",type: "sedan",engine: "ej204x",volume: 2,power: 200, price: 132000},
-   {producer:"subaru",model: "outback",owner:{ name: 'Leon', age: 30, drivingExperience: 1}, year: 2014, color:"red",type: "hachback",engine: "ej204",volume: 2,power: 165, price: 53000},
-   {producer:"bmw",model: "115",owner:{ name: 'Yaryna', age: 30, drivingExperience: 15}, year: 2013, color:"red",type: "hachback",engine: "f15",volume: 1.5,power: 120, price: 50000},
-   {producer:"bmw",model: "315",owner:{ name: 'Mariia', age: 30, drivingExperience: 7}, year: 2010, color:"white",type: "sedan",engine: "f15",volume: 1.5, power: 120, price: 12000},
-   {producer:"bmw",model: "650",owner:{ name: 'Igor', age: 30, drivingExperience: 4}, year: 2009, color:"black",type: "coupe",engine: "f60",volume: 6,power: 350, price: 10000},
-   {producer:"bmw",model: "320",owner:{ name: 'Viktor', age: 30, drivingExperience: 2}, year: 2012, color:"red",type: "sedan",engine: "f20",volume: 2,power: 180, price: 100000},
-   {producer:"mercedes",model: "e200",owner:{ name: 'Anastasiia', age: 30, drivingExperience: 5}, year: 1990, color:"silver",type: "sedan",engine: "eng200",volume: 2,power: 180, price: 24000},
-   {producer:"mercedes",model: "e63",owner:{ name: 'Oleg', age: 30, drivingExperience: 9}, year: 2017, color:"yellow",type: "sedan",engine: "amg63",volume:3,power: 400, price: 18500},
-   { producer: "mercedes", model: "c250", owner: { name: 'Maksym', age: 30, drivingExperience: 6}, year: 2017, color:"red",type: "sedan",engine: "eng25",volume: 2.5,power: 230, price: 23200}
-];
+// const cars = [
+//    {producer:"subaru",model: "wrx",owner:{ name: 'Petro', age: 30, drivingExperience: 3}, year: 2010, color:"blue",type: "sedan",engine: "ej204x",volume: 2,power: 400, price: 23000},
+//    {producer:"subaru",model: "legacy",owner:{ name: 'Ivan', age: 30, drivingExperience: 12}, year: 2007, color:"silver",type: "sedan",engine: "ez30",volume: 3,power: 250, price: 45000},
+//    {producer:"subaru",model: "tribeca",owner:{ name: 'Serhii', age: 30, drivingExperience: 5}, year: 2011, color:"white",type: "jeep",engine: "ej20",volume: 2,power: 300, price: 18000},
+//    {producer:"subaru",model: "leone",owner:{ name: 'Nadiia', age: 30, drivingExperience: 11}, year: 1998, color:"yellow",type: "sedan",engine: "ez20x",volume: 2,power: 140, price: 225000},
+//    {producer:"subaru",model: "impreza",owner:{ name: 'Andrii', age: 30, drivingExperience: 8}, year: 2014, color:"red",type: "sedan",engine: "ej204x",volume: 2,power: 200, price: 132000},
+//    {producer:"subaru",model: "outback",owner:{ name: 'Leon', age: 30, drivingExperience: 1}, year: 2014, color:"red",type: "hachback",engine: "ej204",volume: 2,power: 165, price: 53000},
+//    {producer:"bmw",model: "115",owner:{ name: 'Yaryna', age: 30, drivingExperience: 15}, year: 2013, color:"red",type: "hachback",engine: "f15",volume: 1.5,power: 120, price: 50000},
+//    {producer:"bmw",model: "315",owner:{ name: 'Mariia', age: 30, drivingExperience: 7}, year: 2010, color:"white",type: "sedan",engine: "f15",volume: 1.5, power: 120, price: 12000},
+//    {producer:"bmw",model: "650",owner:{ name: 'Igor', age: 30, drivingExperience: 4}, year: 2009, color:"black",type: "coupe",engine: "f60",volume: 6,power: 350, price: 10000},
+//    {producer:"bmw",model: "320",owner:{ name: 'Viktor', age: 30, drivingExperience: 2}, year: 2012, color:"red",type: "sedan",engine: "f20",volume: 2,power: 180, price: 100000},
+//    {producer:"mercedes",model: "e200",owner:{ name: 'Anastasiia', age: 30, drivingExperience: 5}, year: 1990, color:"silver",type: "sedan",engine: "eng200",volume: 2,power: 180, price: 24000},
+//    {producer:"mercedes",model: "e63",owner:{ name: 'Oleg', age: 30, drivingExperience: 9}, year: 2017, color:"yellow",type: "sedan",engine: "amg63",volume:3,power: 400, price: 18500},
+//    { producer: "mercedes", model: "c250", owner: { name: 'Maksym', age: 30, drivingExperience: 6}, year: 2017, color:"red",type: "sedan",engine: "eng25",volume: 2.5,power: 230, price: 23200}
+// ];
 
 // Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
 
