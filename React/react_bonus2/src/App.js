@@ -1,24 +1,31 @@
 import React, { Component } from "react";
-import User from "./components/user/User";
+import Header from "./components/header/Header";
+import PictureComponent from "./components/PictureComponent";
+
 class App extends Component {
   render() {
-    let users = [
-      { name: "vasya", age: 31, status: false },
-      { name: "petya", age: 30, status: true },
-      { name: "kolya", age: 29, status: true },
-      { name: "olya", age: 28, status: false },
-      { name: "max", age: 30, status: true },
-      { name: "anya", age: 31, status: false },
-      { name: "oleg", age: 28, status: false },
-      { name: "andrey", age: 29, status: true },
-      { name: "masha", age: 30, status: true },
-      { name: "olya", age: 31, status: false },
-      { name: "max", age: 31, status: true },
+    let data = [
+      {
+        msg: "hello KhmelnytskZalizobeton",
+        iUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc1R3haV_dbcq04ybWIKX2KcvNGwlmjuMU6ILZaebP&s",
+      },
+      {
+        msg: "hello KhmelnytskZalizobeton",
+        iUrl: "https://www.bau.com.ua/tmp/hzb-logo-200x200.jpeg",
+      },
+      {
+        msg: "hello KhmelnytskZalizobeton",
+        iUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRVKa9p3TPH-5SolSaYQ0xuxEYew4-oB_azWU8hLf6g&s",
+      },
     ];
     return (
       <div>
-        {users.map((value, index) => (
-          <User user={value} key={index} />
+        <Header />
+        {data.map((value) => (
+          <PictureComponent
+            {...value} // деструктиризація
+            // msg={value.msg} iUrl={value.iUrl} // 2-ий варіант
+          />
         ))}
       </div>
     );
