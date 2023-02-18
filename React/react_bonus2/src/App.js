@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header";
+import HeaderHzb from "./components/HeaderHzb/HeaderHzb";
 import PictureComponent from "./components/PictureComponent";
+import ProductCard from "./components/ProductCard/ProductCard";
 
 class App extends Component {
   render() {
@@ -21,6 +23,19 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <HeaderHzb />
+        <ProductCard
+          title="Title 1"
+          price="$29.99"
+          description="test description"
+        />
+        <hr />
+        <ProductCard
+          title="Title 2"
+          price="$49.99"
+          description="test description 2"
+        />
+        <hr />
         {data.map((value) => (
           <PictureComponent
             {...value} // деструктиризація

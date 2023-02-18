@@ -1,0 +1,44 @@
+.container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 100px;
+   height: 96px;
+   background-color: black;
+   flex-wrap: wrap;
+   margin-bottom: 10px;
+}
+
+.header_logo img {
+   max-height: 70px;
+}
+
+.header_nav a {
+   font-weight: 500px;
+   font-size: 16px;
+   line-height: 20px;
+   text-transform: uppercase;
+   color: white;
+}
+
+.menu {
+   display: flex;
+   column-gap: 35px;
+   flex-wrap: wrap;
+}
+
+.header_box {
+   display: flex;
+   column-gap: 35px;
+}
+
+.header_box_img {
+   max-width: 20px;
+}
