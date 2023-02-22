@@ -30,14 +30,14 @@ function App() {
       <h1>My React App</h1>
       <Header />
 
-      {/* {isHeaderVisible && <Header counter={counter} />}
+      {/* {isHeaderVisible && <Header counter={counter} />} */}
 
-      <button onClick={clickHandler}>inc</button>
+      {/* <button onClick={clickHandler}>inc</button>
       <button onClick={toggleVisible}>toggle header</button>
       <button onClick={changeSmthInTodo}>change smth in todo</button>
 
       <div>{todos[0]}</div>
-      <div>{todos[1]}</div> */}
+      <div>{todos[1]}</div>  */}
     </div>
   );
 }
