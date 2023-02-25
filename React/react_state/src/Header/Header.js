@@ -43,6 +43,7 @@ function Header() {
       <button className="btn" onClick={toggleVisible}>
         Toggle header
       </button>
+      <hr />
     </div>
   );
 }
