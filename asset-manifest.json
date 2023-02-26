@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a2ec2e6.css",
-    "main.js": "/static/js/main.6f3c0376.js",
-    "static/js/787.0c3f432a.chunk.js": "/static/js/787.0c3f432a.chunk.js",
-    "index.html": "/index.html",
-    "main.6a2ec2e6.css.map": "/static/css/main.6a2ec2e6.css.map",
-    "main.6f3c0376.js.map": "/static/js/main.6f3c0376.js.map",
-    "787.0c3f432a.chunk.js.map": "/static/js/787.0c3f432a.chunk.js.map"
+    "main.css": "//Okten-School/React/react_state/static/css/main.6a2ec2e6.css",
+    "main.js": "//Okten-School/React/react_state/static/js/main.8e98ed56.js",
+    "static/js/787.0c3f432a.chunk.js": "//Okten-School/React/react_state/static/js/787.0c3f432a.chunk.js",
+    "index.html": "//Okten-School/React/react_state/index.html",
+    "main.6a2ec2e6.css.map": "//Okten-School/React/react_state/static/css/main.6a2ec2e6.css.map",
+    "main.8e98ed56.js.map": "//Okten-School/React/react_state/static/js/main.8e98ed56.js.map",
+    "787.0c3f432a.chunk.js.map": "//Okten-School/React/react_state/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a2ec2e6.css",
-    "static/js/main.6f3c0376.js"
+    "static/js/main.8e98ed56.js"
   ]
 }
