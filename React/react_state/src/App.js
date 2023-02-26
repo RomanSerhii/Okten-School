@@ -6,6 +6,7 @@ import "./HW1-wrap.css";
 
 const products = [
   {
+    id: 1,
     title: "Product 1",
     price: "$100",
     description: "Description 1",
@@ -17,6 +18,7 @@ const products = [
     ],
   },
   {
+    id: 2,
     title: "Product 2",
     price: "$159",
     description: "Description 2",
@@ -28,6 +30,7 @@ const products = [
     ],
   },
   {
+    id: 3,
     title: "Product 3",
     price: "$299",
     description: "Description 3",
@@ -42,16 +45,16 @@ const products = [
 ];
 
 function App() {
-  const [visibleProductsIndex, setVisibleProductsIndex] = useState(0);
+  const [visibleProductsId, setVisibleProductsIndex] = useState(0);
 
   const removeFirstProduct = () => {
-    setVisibleProductsIndex(visibleProductsIndex + 1);
+    setVisibleProductsIndex(visibleProductsId + 1);
   };
   const showFirstProduct = () => {
-    setVisibleProductsIndex(visibleProductsIndex - 1);
+    setVisibleProductsIndex(visibleProductsId - 1);
   };
 
-  const visibleProducts = products.slice(visibleProductsIndex);
+  const visibleProducts = products.slice(visibleProductsId);
 
   return (
     <div className="App">
@@ -59,8 +62,8 @@ function App() {
       <Header />
       <h2>HomeWork 1</h2>
       <div className="hw1_wrap">
-        {visibleProducts.map((product, index) => (
-          <ProductCard key={index} {...product} />
+        {visibleProducts.map((product, id) => (
+          <ProductCard key={id} {...product} />
         ))}
       </div>
       <button className="btn" onClick={removeFirstProduct}>
